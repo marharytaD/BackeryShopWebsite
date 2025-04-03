@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test HTML page</title>
+  </head>
+  <body>
+    <video controls loop autoplay>
+      <!-- controls shows file <audio> mp3 or mp4 on page. loop - the video will be resumed after reaching the end. autoplay is autoplay. mute- will be without sound, the customer can turn it on selber-->
+      <source src="./" />
+    </video>
+    <!-- Test table-->
+    <table>
+      <caption>
+        Lorem,ipsum dolor.
+      </caption>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Full name</th>
+          <th>Position</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <td>1000 Dollar</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <td rowspan="2">1000 Dollar</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <!--<td>1000 Dollar</td>-->
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <td>1000 Dollar</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4000 Dollar</td>
+        </tr>
+      </tfoot>
+    </table>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/xcJtL7QggTI?si=ZECk88AitxF4iVua"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

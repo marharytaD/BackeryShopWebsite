@@ -1,0 +1,276 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 300;
+  src: url('../fonts/poppins-v21-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 900;
+  src: url('../fonts/poppins-v21-latin-900.woff2') format('woff2');
+}
+
+/*#main-title >h1{
+    border: 4px solid rgb(50, 27, 50);
+}
+.main-title{
+    border: 4px solid rgb(50, 27, 50);
+}
+.button-order{
+border: 2px solid rgb(162, 0, 0);
+}
+.button-order[disabled]{
+    border: 2px solid rgb(255, 0, 0);
+}
+.main-section {
+    color: blue;
+}*/
+html {
+  /*or :root*/
+  --color-primary-dark: #819b57;
+  --color-primary-light: #faf4ea;
+  --color-brand-dark: #31261a;
+  --color-brand-light: #465929;
+}
+/*Base*/
+body {
+  color: var(--color-brand-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+address {
+  font-style: normal;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /*deletes the black points before text*/
+}
+.visually-hidden {
+  position: absolute;
+  left: -9999em;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1288px; /*адоптивний контент, тобто при зменшенні розміру показу розмір контенту не зменшується*/
+  margin: 0 auto;
+  /*padding: 24px;*/
+}
+.no-bullets {
+  list-style-type: none;
+}
+/*Button*/
+header .button {
+  font-weight: 600;
+  color: var(--color-primary-light);
+  background-color: var(--color-primary-dark);
+  width: Hug (238px) px;
+  line-height: Hug (59px) px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+button:hover {
+  background-color: transparent;
+  color: var(--color-brand-light);
+}
+/*Header*/
+.header {
+  background-color: rgb(128, 110, 110);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1; /*занял все пространство, которое есть*/
+  justify-content: center;
+}
+/*Link*/
+.header-link {
+  color: var(--color-primary-light);
+  line-height: 1.5;
+  text-decoration: none;
+}
+.header-link:hover {
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  /*font-weight: 600;*/
+}
+/*Hero section*/
+.hero-section {
+  padding: 272px;
+}
+.hero-title {
+  margin-bottom: 0;
+  color: var(--color-primary-light);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  font-size: 128px;
+  /*text-decoration: underline;/*underline pidkreslenniya*/
+  /*text-transform: capitalize; --кожна перша літера з великої*/
+  /*text-shadow: 2px 2px 4px violet;*/
+  /*letter-spacing: 4px;*/
+  /*word-spacing: 20px;*/
+}
+.hero-title .accent {
+  color: var(--color-primary-dark);
+}
+/*.textInCapsLock {
+  color: var(--color-primary-dark);
+  text-transform: uppercase;
+}*/
+/*Advantages section */
+.advantages-section {
+  background-color: var(--color-primary-dark);
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.advantages-item {
+  color: var(--color-primary-light);
+  font-size: 20px;
+  font-weight: 300;
+}
+.section-title {
+  color: var(--color-brand-dark);
+}
+.section-title .accent2 {
+  color: var(--color-brand-light);
+}
+/*Traditions section*/
+.traditions-title {
+  margin-bottom: 42px;
+}
+.traditions-section {
+  padding-top: 96px;
+}
+.traditions-container {
+  display: flex;
+  gap: 100;
+  justify-content: space-between;
+  gap: 40px;
+}
+.traditions-content {
+  max-width: 710px;
+}
+.traditions-text.limited {
+  max-width: 330px;
+}
+.traditions-text .brand {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+.traditions-text .brand-uppercase {
+  color: var(--color-primary-dark);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+/*Chefs section*/
+.chefs-title {
+  margin-bottom: 80px;
+}
+.chefs-names {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+/*Formats section*/
+
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.formats-item {
+  flex-basis: calc(100%- 40px / 3);
+}
+.format-card {
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  padding: 24px;
+}
+.formats-title {
+  font-size: 24px;
+}
+.formats-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+.format-title {
+  margin-bottom: 80px;
+}
+
+/*Contact section*/
+.contact-title {
+  margin-bottom: 16px;
+}
+
+/*Footer section*/
+.adress-link {
+  color: var(--color-primary-light);
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+}
+.adress-link:hover {
+  color: var(--color-primary-dark);
+}
+.address-copyright {
+  font-size: 14px;
+}
